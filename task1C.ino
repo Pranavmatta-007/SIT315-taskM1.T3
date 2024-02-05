@@ -4,10 +4,10 @@ const int led1 = 8;
 const int led2 = 7;
 void setup()
 {
-pinMode(motionSensor1Pin, INPUT);
-pinMode(motionSensor2Pin, INPUT);
-pinMode(led1Pin, OUTPUT);
-pinMode(led2Pin, OUTPUT);
+pinMode(Sensor1, INPUT);
+pinMode(Sensor2, INPUT);
+pinMode(led1, OUTPUT);
+pinMode(led2, OUTPUT);
 Serial.begin(9600);
 attachInterrupt(digitalPinToInterrupt(Sensor1), SensorInterupt1,
 CHANGE);
